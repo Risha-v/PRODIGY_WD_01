@@ -1,0 +1,150 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./assets/a-resort-with-a-stunning-poolside-view.jpeg');
+    background-size: 100%;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+
+form {
+    background-color: lightskyblue;
+    border: 1px solid lightskyblue;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; 
+    border-radius: 6px;
+    box-shadow: 4px 4px 8px rgb(1, 158, 255);
+}
+
+form.show {
+    display: block; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: row 2;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #fff;
+    color: rgb(207, 58, 58);
+}
+
+.nav-link.active{
+    background-color: rgb(0, 0, 0);
+    color: rgb(52, 116, 172);
+}
+
+
+.page {
+    min-height: 100vh;
+    padding: 3rem;
+    box-sizing: border-box;
+    display: none;
+    
+}
+
+.page.active {
+    display: block;
+}
+
+#home{
+    background-color: lightblue;
+}
+
+#about {
+    background-color: lightgreen;
+}
+
+#services {
+    background-color: lightcoral;
+}
+
+#contact {
+    background-color: lightskyblue;
+}
+
+.animate-text {
+    opacity: 0;
+    overflow: show;
+    white-space: wrap;
+    animation: typing 1s steps(10) forwards;
+}
+
+@keyframes typing {
+    from { width: 0; height: 0; }
+    to { width: 100%; height: 100%; opacity: 1; }
+}
+
+li{
+    padding: 0 10px;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding-left: 10px;
+}
